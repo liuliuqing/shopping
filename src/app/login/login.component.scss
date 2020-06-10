@@ -1,0 +1,11 @@
+.login_box{width: 100%;height: 100%;justify-content: center;align-items: center;}
+.contain_box{border: 1px solid #333;max-width: 600px;width: 80%;padding: 20px;
+    .line{margin: 10px 0;
+        >span{display: inline-block;max-width: 100px;width: 30%;}
+        >input{width: 70%;}
+        >p{font-size: 12px;padding-left: 28%;color: red;}
+    }
+    .tr{margin: 30px 0 0;
+        button{width: 100px;}
+    }
+}

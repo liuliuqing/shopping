@@ -1,0 +1,17 @@
+<div class="login_box flex">
+    <div class="contain_box">
+        <form [formGroup]="formModel" (submit)="onSubmit()" novalidate>
+            <div class="line">
+                <span>用户名：</span>
+                <input type="text" formControlName="username" />
+                <p *ngIf="formModel.hasError('minlength','username')">用户名至少6位</p>
+            </div>
+            <div class="line"><span>手机名：</span><input type="number" formControlName="mobile" /></div>
+            <div formGroupName="pwGroup">
+                <div class="line"><span>密码：</span><input formControlName="password" type="password" /></div>
+                <div class="line"><span>确认密码：</span><input formControlName="pwconfirm" type="password" /></div>
+            </div>
+            <div class="tr"><button type="submit">确定</button></div>
+        </form>
+    </div>    
+</div>

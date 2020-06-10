@@ -1,0 +1,37 @@
+<!-- <mat-sidenav-container class="example-container">
+    <mat-sidenav>
+        <app-sidebar></app-sidebar>
+    </mat-sidenav>
+    <div class="side">
+        <header>
+            <app-header></app-header>
+        </header>
+        <main>
+            <button>打开</button>
+        </main>
+        <footer>
+            <app-footer></app-footer>
+        </footer>
+    </div> 
+</mat-sidenav-container> -->
+
+<mat-drawer-container class="example-container" autosize>
+    <mat-drawer #drawer class="example-sidenav" mode="side">
+        <p>Auto-resizing sidenav</p>
+        <p *ngIf="showFiller">Lorem, ipsum dolor sit amet consectetur.</p>
+        <button (click)="showFiller = !showFiller" mat-raised-button>
+            Toggle extra text
+        </button>
+    </mat-drawer>
+
+    <div class="example-sidenav-content">
+        <button type="button" mat-button (click)="drawer.toggle()">
+            Toggle sidenav
+        </button>
+    </div>
+
+</mat-drawer-container>
+
+
+
+<!-- <router-outlet></router-outlet> -->
